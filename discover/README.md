@@ -22,6 +22,7 @@ Set up the build tools using -
 ### Build commands
 The general build commands -
 
+    cd
     rm -rf tasker-project-assets >/dev/null 2>&1
     git clone -n --depth=1 --filter=tree:0 https://github.com/HunterXProgrammer/tasker-project-assets
     cd tasker-project-assets
@@ -32,7 +33,7 @@ The general build commands -
 
 Or one-liner -
 
-    rm -rf tasker-project-assets >/dev/null 2>&1; git clone -n --depth=1 --filter=tree:0 https://github.com/HunterXProgrammer/tasker-project-assets; cd tasker-project-assets; git sparse-checkout set --no-cone discover; git checkout; cd discover; go build -buildvcs=false -ldflags="-extldflags -s"
+    cd; rm -rf tasker-project-assets >/dev/null 2>&1; git clone -n --depth=1 --filter=tree:0 https://github.com/HunterXProgrammer/tasker-project-assets; cd tasker-project-assets; git sparse-checkout set --no-cone discover; git checkout; cd discover; go build -buildvcs=false -ldflags="-extldflags -s"
 
 ### Run The Binary
 After building, run the binary using -
