@@ -91,7 +91,7 @@ func Discover(service string, timeout time.Duration, retries int, mx int) Servic
 
 func main() {
 	if len(os.Args) != 2 {
-		fmt.Printf("Usage: %s <service> (eg:- udp:test)\n", os.Args[0])
+		fmt.Printf("Usage: %s <service> (eg:- ssdp:all)\n", os.Args[0])
 		os.Exit(1)
 	}
 	service := os.Args[1]
