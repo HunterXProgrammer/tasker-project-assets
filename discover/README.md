@@ -11,7 +11,7 @@ You can build a binary out of it using `go build`.
 Or you can grab the pre-compiled binaries in **[releases](https://github.com/HunterXProgrammer/tasker-project-assets/releases)**.
 
 ### Termux Users
-Only for those using Termux in Android device
+Only for those using Termux in Android device.
 
 Set up the build tools using -
 
