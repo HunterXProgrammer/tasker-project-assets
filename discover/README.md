@@ -44,6 +44,3 @@ If SSDP devices found then a JSON is printed -
 
 `{"location": ["http://192.168.29.21:8888/ssdp/device-desc.xml", "http://192.168.29.21:9999/ssdp/device-desc.xml"], "host": ["http://192.168.29.21", "http://192.168.29.21"], "port": ["8888", "9999"]}`
 
-Or if not found then just -
-
-`{}`
