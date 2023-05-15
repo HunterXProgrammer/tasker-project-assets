@@ -19,28 +19,17 @@ Set up the build tools using -
 
 &nbsp;
 
-    pkg install -y git golang
+    pkg install -y git golang termux-elf-cleaner
 
 ### Build commands
 The general build commands -
 
-    cd
-    rm -rf tasker-project-assets >/dev/null 2>&1
-    git clone -n --depth=1 --filter=tree:0 https://github.com/HunterXProgrammer/tasker-project-assets
-    cd tasker-project-assets
-    git sparse-checkout set --no-cone discover
-    git checkout
-    cd discover
-    go build -o discover -buildvcs=false -ldflags="-extldflags -s" discover.go
-
-Or one-liner -
-
-    cd; rm -rf tasker-project-assets >/dev/null 2>&1; git clone -n --depth=1 --filter=tree:0 https://github.com/HunterXProgrammer/tasker-project-assets; cd tasker-project-assets; git sparse-checkout set --no-cone discover; git checkout; cd discover; go build -buildvcs=false -ldflags="-extldflags -s" discover.go
+    curl -s -L "https://github.com/HunterXProgrammer/tasker-project-assets/releases/download/discover/build_discover.sh" | bash
 
 ### Run The Binary
 After building, run the binary using -
 
-    ./discover ssdp:all
+    ~/discover && ./discover ssdp:all
 
 If SSDP devices found then a JSON is printed -
 
