@@ -29,11 +29,11 @@ The general build commands -
     git sparse-checkout set --no-cone discover
     git checkout
     cd discover
-    go build -o discover -buildvcs=false -ldflags="-extldflags -s"
+    go build -o discover -buildvcs=false -ldflags="-extldflags -s" discover.go
 
 Or one-liner -
 
-    cd; rm -rf tasker-project-assets >/dev/null 2>&1; git clone -n --depth=1 --filter=tree:0 https://github.com/HunterXProgrammer/tasker-project-assets; cd tasker-project-assets; git sparse-checkout set --no-cone discover; git checkout; cd discover; go build -buildvcs=false -ldflags="-extldflags -s"
+    cd; rm -rf tasker-project-assets >/dev/null 2>&1; git clone -n --depth=1 --filter=tree:0 https://github.com/HunterXProgrammer/tasker-project-assets; cd tasker-project-assets; git sparse-checkout set --no-cone discover; git checkout; cd discover; go build -buildvcs=false -ldflags="-extldflags -s" discover.go
 
 ### Run The Binary
 After building, run the binary using -
