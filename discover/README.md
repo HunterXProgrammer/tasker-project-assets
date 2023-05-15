@@ -3,7 +3,7 @@ Testing the ability of ChatGPT to generate Go code that can discover SSDP device
 
 Prints out a JSON like:-
 
-`{"location":["http://192.168.29.21:9999/ssdp/device-desc.xml","http://192.168.29.21:8888/ssdp/device-desc.xml"],"scheme":["http","http"],"host":["192.168.29.21","192.168.29.21"],"port":["9999","8888"]}`
+`{"location":["http://192.168.29.21:8888/ssdp/device-desc.xml","http://192.168.29.21:9999/ssdp/device-desc.xml"],"scheme":["http","http"],"host":["192.168.29.21","192.168.29.21"],"port":["8888","9999"]}`
 
 # Building
 You can build a binary out of it using `go build`.
@@ -42,5 +42,5 @@ After building, run the binary using -
 
 If SSDP devices found then a JSON is printed -
 
-`{"location":["http://192.168.29.21:9999/ssdp/device-desc.xml","http://192.168.29.21:8888/ssdp/device-desc.xml"],"scheme":["http","http"],"host":["192.168.29.21","192.168.29.21"],"port":["9999","8888"]}`
+`{"location":["http://192.168.29.21:8888/ssdp/device-desc.xml","http://192.168.29.21:9999/ssdp/device-desc.xml"],"scheme":["http","http"],"host":["192.168.29.21","192.168.29.21"],"port":["8888","9999"]}`
 
