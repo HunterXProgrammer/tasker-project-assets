@@ -18,6 +18,7 @@ type SSDPResponse struct {
 
 type ServiceInfo struct {
     Location []string `json:"location"`
+    Scheme   []string `json:"scheme"`
     Host     []string `json:"host"`
     Port     []string `json:"port"`
 }
